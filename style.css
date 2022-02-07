@@ -37,8 +37,8 @@ header nav a{
   color: white;
   text-decoration: none;
 }
-:hover nav{
-  color: crimson;
+header nav ul li a:hover {
+  color: rgb(139, 105, 220);
 
 }
 header nav p {
@@ -92,7 +92,7 @@ button {
   width: 250px;
   height: 330px;
   border-radius: 24px 0px;
-  margin: 25px;
+  margin: 32px;
   position: relative;
 }
 .pacotes .card-img {
@@ -242,18 +242,18 @@ button {
 }
 /*Responsividade*/
 
-/*tablet*/
-@media (max-width: 767px) {
-  header {
-  }
-}
 /*phones*/
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+  header nav p{
+     font-size: 21px;
+  }
   body {
     margin-bottom: 55px;
+    width: 100%;
   }
   header nav ul {
-    background: darkblue;
+    background: rgb(0,54,255);
+background: linear-gradient(180deg, rgba(0,54,255,0.9218390804597701) 0%, rgb(26, 30, 151) 72%);
     color: white;
     bottom: 0;
     left: 0;
@@ -263,11 +263,14 @@ button {
     height: 45px;
     align-items: center;
     display: flex;
-    justify-content: space-betwee;
+    justify-content:space-between;
     z-index: 100;
   }
-  header nav p {
+   header nav p {
     width: 100%;
     text-align: center;
+  }
+  header nav ul li a:hover{
+    color: rgb(177, 167, 235);
   }
 }
