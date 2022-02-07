@@ -4,33 +4,48 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+
 }
+
 body {
   margin: 0;
   width: 100vw;
   background: rgb(98,131,255);
-  background: linear-gradient(180deg, rgba(98,131,255,0.6208858543417367) 0%, rgba(205,225,255,0.676908263305322) 100%);
+  background: linear-gradient(180deg, rgba(98,131,255,0.6208858543417367) 0%, rgba(205,225,255,0.676908263305322) 100%);  
+
 }
 header {
   background: no-repeat center/cover
-    url(imagens/samuele-errico-piccarini-MCroQe9ykmM-unsplash.jpg);
-  height: calc(100vh - 150px);
+    url(https://www.cvccorp.com.br/fronteiras/wp-content/uploads/2021/06/Toronto-Canada-shutterstock_578065966.jpg);
+  height: calc(100vh - 10px); 
 }
 header nav {
   display: flex;
   justify-content: space-between;
-  margin: auto 30px;
+  margin: auto 30px; 
 }
 header nav ul {
   display: flex;
   list-style: none;
 }
 header nav ul li {
-  margin: 0px 15px;
+  margin: 15px 15px;
+  font-size: 19px;
 }
 
+header nav a{
+  color: white;
+  text-decoration: none;
+}
+:hover nav{
+  color: crimson;
+
+}
 header nav p {
   font-weight: bold;
+  font-size: 20px;
+  color: white;
+  margin: 15px;
 }
 .Header-content {
   color: #e1dad5;
@@ -40,8 +55,13 @@ header nav p {
 }
 .Header-content > h1 {
   margin: 10px;
+  font-size: 50px;
+}
+.Header-content p{
+  font-size: 17px;
 }
 button {
+  cursor: pointer;
   margin: 25px;
   padding: 10px;
   border-radius: 122px;
@@ -198,13 +218,27 @@ button {
   margin:50px auto;
 
 }
-.text-contato{
-  text-align: center;
-  margin: 10px;
+.text-contato {
+  margin: auto;
 }
 .text-contato ul li{
   list-style: none;
   padding: 5px;
+   display:flex;
+   justify-content: center;
+  align-items: center;
+  padding: 10px;   
+}
+.text-contato ul li svg{
+  margin: 5px;
+}
+.text-contato ul li a{
+  margin: 5px;
+  text-decoration: none;
+  color: blueviolet;
+}
+.text-contato ul li strong {
+  padding: 3px;
 }
 /*Responsividade*/
 
